@@ -3,13 +3,16 @@ module.exports = {
     browser: true,
     es2020: true,
     node: true,
-    jest: true
+    jest: true,
+    vitest: true
   },
   extends: [
+    'plugin:react/recommended',
     'standard',
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint',
-    'prettier/standard'
+    'prettier/standard',
+    'prettier/react'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -19,13 +22,16 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: 'module'
   },
-  plugins: ['@typescript-eslint', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
     'prettier/prettier': 'error'
   },
   settings: {
     'import/resolver': {
       typescript: {}
+    },
+    react: {
+      version: 'detect'
     }
   }
 };
