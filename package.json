@@ -17,6 +17,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
+    "@cms-nest-libs/eslint-config": "*",
     "@types/node": "^20.5.1",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
