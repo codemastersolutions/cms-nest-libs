@@ -1,0 +1,37 @@
+{
+  "name": "@cms-nest-libs/common",
+  "version": "0.0.0",
+  "description": "Common configurations for CodeMaster's NestJS packages",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codemastersolutions/cms-nest-libs.git",
+    "directory": "packages/common"
+  },
+  "author": "Gilson Gabriel <gilson@codemastersolucoes.com>",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": ">=18.17.1"
+  },
+  "keywords": [
+    "nest",
+    "nestjs",
+    "common",
+    "pkg",
+    "core",
+    "cms",
+    "codemastersolutions",
+    "codemaster"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig.build.json",
+    "build:dev": "rimraf dist && tsc -p tsconfig.json",
+    "publish:npm": "npm version minor && npm run build && npm publish --access public",
+    "format": "prettier --write \"{lib,test}/**/*.ts\"",
+    "lint": "eslint 'src/**/*.ts' --fix",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage"
+  }
+}
