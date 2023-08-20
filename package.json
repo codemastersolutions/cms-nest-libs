@@ -12,10 +12,13 @@
   },
   "scripts": {
     "prepare": "husky install",
+    "lint": "eslint 'packages/**/*.ts' --fix",
     "commit": "git-cz",
     "test": "vitest",
-    "test:ui": "vitest --ui",
-    "coverage": "vitest run --coverage"
+    "test:run": "vitest run",
+    "test:dev": "vitest dev",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
   },
   "devDependencies": {
     "@cms-nest-libs/eslint-config": "*",
@@ -34,5 +37,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codemastersolutions/cms-nest-libs.git"
   }
 }
