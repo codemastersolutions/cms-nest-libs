@@ -15,6 +15,7 @@ module.exports = {
     'prettier/react'
   ],
   parser: '@typescript-eslint/parser',
+  root: true,
   parserOptions: {
     ecmaFeatures: {
       jsx: true
@@ -24,7 +25,12 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
-    'prettier/prettier': 'error'
+    'prettier/prettier': 'error',
+    '@typescript-eslint/interface-name-prefix': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off'
   },
   settings: {
     'import/resolver': {
