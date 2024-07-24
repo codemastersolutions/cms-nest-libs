@@ -16,6 +16,26 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@cms-nest-libs/common": [
+        "libs/common/src"
+      ],
+      "@cms-nest-libs/common/*": [
+        "libs/common/src/*"
+      ],
+      "@cms-nest-libs/authentication": [
+        "libs/authentication/src"
+      ],
+      "@cms-nest-libs/authentication/*": [
+        "libs/authentication/src/*"
+      ],
+      "@cms-nest-libs/authorization": [
+        "libs/authorization/src"
+      ],
+      "@cms-nest-libs/authorization/*": [
+        "libs/authorization/src/*"
+      ]
+    }
   }
 }
